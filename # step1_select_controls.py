@@ -8,7 +8,7 @@ import gc
 import warnings
 
 # === Define paths ===
-base_dir = "C:/Research material/all trade data/import"
+base_dir = ""
 temp_dir = os.path.join(base_dir, "temp")
 results_dir = os.path.join(base_dir, "results")
 plots_dir = os.path.join(base_dir, "plots")
@@ -20,7 +20,7 @@ for folder in [temp_dir, results_dir, plots_dir]:
 # === Feature selection logic ===
 def define_variable_groups(hist):
     hist_cols = hist.columns
-    group1 = ["plan_30_31", "plan_31_32", "wheat_pct", "pf_wheat_pct", "cf_wheat_pct", "sf_wheat_pct",
+    group1 = ["plan_30_31", "plan_31_32", "wheat_pct", "pf_wheat_pct", "cf_wheat_pct", "sf_wheat_pct",  # <- change if needed
               "pf_winter_pct", "cf_winter_pct", "sf_winter_pct", "cf_abs", "cf_per1000",
               "dist_to_rail", "distance_city_20k", "district_area"]
     group2 = ["pop_1927", "rpop_1927", "urbanization_1927", "literacy_rural_1927", "rethnic_frac_1927"]
@@ -135,3 +135,4 @@ if __name__ == "__main__":
         d_var="loss_per1000_33_34",
         threshold=threshold
     )
+
