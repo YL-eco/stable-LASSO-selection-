@@ -11,8 +11,8 @@ def run_script(script_path):
         print("⚠️ Error:", result.stderr)
 
 def main():
-    base_path = "C:/Research material/all trade data"
-    hist_path = "C:/Research material/Historical data/oblast_weighted_averages.csv"
+    base_path = ""
+    hist_path = ""
 
     # Define subfolders
     results_dir = os.path.join(base_path, "results")
@@ -39,3 +39,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
