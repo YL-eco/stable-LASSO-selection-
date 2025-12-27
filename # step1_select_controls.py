@@ -126,7 +126,7 @@ def select_controls_lasso(baseline_path, hist_path, y_var, d_var, threshold, bat
 # === Run Step 1 ===
 if __name__ == "__main__":
     baseline_path = os.path.join(base_dir, "baseline_import.csv")
-    hist_path = "C:/Research material/Historical data/oblast_weighted_averages.csv"
+    hist_path = ""
     threshold = 0.8  # <- Change this if needed
     select_controls_lasso(
         baseline_path=baseline_path,
@@ -135,4 +135,5 @@ if __name__ == "__main__":
         d_var="loss_per1000_33_34",
         threshold=threshold
     )
+
 
