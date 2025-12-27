@@ -130,7 +130,7 @@ def run_residualization(baseline_path, hist_path, y_var, d_var, w_var):
 # === Run Step 2 ===
 if __name__ == "__main__":
     baseline_path = os.path.join(base_dir, "baseline_import.csv")
-    hist_path = "C:/Research material/Historical data/oblast_weighted_averages.csv"
+    hist_path = ""
 
     run_residualization(
         baseline_path=baseline_path,
@@ -139,4 +139,5 @@ if __name__ == "__main__":
         w_var="Net_Weight_kg",
         d_var="loss_per1000_33_34"
     )
+
 
