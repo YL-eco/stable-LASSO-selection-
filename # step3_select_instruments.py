@@ -139,8 +139,8 @@ def select_stable_instruments_belloni_parallel(resid_data_path, hist_path,
 if __name__ == "__main__":
     # 🔧 Unified config block
     config = {
-        "resid_data_path": "C:/Research material/all trade data/import/results/residualized_dataset.csv",
-        "hist_path": "C:/Research material/Historical data/oblast_weighted_averages.csv",
+        "resid_data_path": "",
+        "hist_path": "",
         "d_resid_var": "d_resid",
         "batch_frac": 0.05,
         "n_batches": 20,
@@ -150,3 +150,4 @@ if __name__ == "__main__":
     }
 
     select_stable_instruments_belloni_parallel(**config)
+
