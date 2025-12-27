@@ -5,7 +5,7 @@ import numpy as np
 from sklearn.linear_model import LinearRegression
 
 # === Define paths ===
-base_dir = "C:/Research material/all trade data/import"
+base_dir = ""
 results_dir = os.path.join(base_dir, "results")
 os.makedirs(results_dir, exist_ok=True)
 
@@ -139,3 +139,4 @@ if __name__ == "__main__":
         w_var="Net_Weight_kg",
         d_var="loss_per1000_33_34"
     )
+
